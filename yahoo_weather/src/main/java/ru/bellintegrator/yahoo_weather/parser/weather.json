@@ -1,0 +1,33 @@
+{"location":{"woeid":2461928,"city":"Northfield","region":" MN","country":"United States","lat":44.4496,"long":-93.153763,"timezone_id":"America/Chicago"},"current_observation":{"wind":{"chill":64,"direction":155,"speed":8.08},"atmosphere":{"humidity":78,"visibility":10.0,"pressure":28.82,"rising":0},"astronomy":{"sunrise":"6:28 am","sunset":"8:00 pm"},"condition":{"text":"Mostly Cloudy","code":27,"temperature":64},"pubDate":1566802800},"forecasts":[{"day":"Mon","date":1566795600,"low":62,"high":70,"text":"Scattered Thunderstorms","code":47},{"day":"Tue","date":1566882000,"low":57,"high":71,"text":"Mostly Sunny","code":34},{"day":"Wed","date":1566968400,"low":56,"high":69,"text":"Partly Cloudy","code":30},{"day":"Thu","date":1567054800,"low":53,"high":79,"text":"Sunny","code":32},{"day":"Fri","date":1567141200,"low":53,"high":71,"text":"Partly Cloudy","code":30},{"day":"Sat","date":1567227600,"low":47,"high":69,"text":"Partly Cloudy","code":30},{"day":"Sun","date":1567314000,"low":48,"high":71,"text":"Mostly Sunny","code":34},{"day":"Mon","date":1567400400,"low":53,"high":73,"text":"Mostly Sunny","code":34},{"day":"Tue","date":1567486800,"low":57,"high":75,"text":"Partly Cloudy","code":30},{"day":"Wed","date":1567573200,"low":57,"high":72,"text":"Partly Cloudy","code":30}]}
+
+
+{Authorization=
+[OAuth oauth_consumer_key="dj0yJmk9M3JHQW9VSjBSSVE4JmQ9WVdrOU4zcFdZMWxsTXpnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTQw",
+  oauth_nonce="AB1Xgk9Y",
+  oauth_timestamp=
+  "1566980751",
+  oauth_signature_method="HMAC-SHA1",
+  "G1CReMj9GAaEfQy2V/3a0rsVEs0=",
+  oauth_signature=oauth_version="1.0"],
+Yahoo-App-Id=[7zVcYe38],
+Accept=[application/json]}
+
+{Authorization=
+[OAuth oauth_consumer_key="dj0yJmk9M3JHQW9VSjBSSVE4JmQ9WVdrOU4zcFdZMWxsTXpnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTQw",
+oauth_nonce="EwY6pCh",
+oauth_timestamp="1566980928",
+oauth_signature_method="HMAC-SHA1",
+oauth_signature="ItgZQjpAzQV5HkABmrHoX65c18A=",
+oauth_version="1.0"],
+Content-Type=[application/json],
+X-Yahoo-App-Id=[7zVcYe38]}
+
+{Authorization=
+[OAuth oauth_consumer_key="dj0yJmk9M3JHQW9VSjBSSVE4JmQ9WVdrOU4zcFdZMWxsTXpnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTQw",
+oauth_nonce="Un2k5KC",
+oauth_timestamp="1566983104",
+oauth_signature_method="HMAC-SHA1",
+oauth_signature="ROtcxGyDO45YWyL/n3tbysZAJ6s=",
+oauth_version="1.0"],
+Content-Type=[application/json],
+X-Yahoo-App-Id=[7zVcYe38]}

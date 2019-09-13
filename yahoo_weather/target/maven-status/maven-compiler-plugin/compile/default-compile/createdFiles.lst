@@ -1,0 +1,14 @@
+ru\bellintegrator\yahoo_weather\parser\Location.class
+ru\bellintegrator\yahoo_weather\jms\JMSReceiver.class
+ru\bellintegrator\yahoo_weather\service\YahooRequestInterface.class
+ru\bellintegrator\yahoo_weather\service\YahooRequest.class
+ru\bellintegrator\yahoo_weather\parser\Forecast.class
+ru\bellintegrator\yahoo_weather\jms\JMSListener.class
+ru\bellintegrator\yahoo_weather\parser\Astronomy.class
+ru\bellintegrator\yahoo_weather\parser\Atmosphere.class
+ru\bellintegrator\yahoo_weather\parser\CurrentObservation.class
+ru\bellintegrator\yahoo_weather\jms\JMSSender.class
+ru\bellintegrator\yahoo_weather\parser\Condition.class
+ru\bellintegrator\yahoo_weather\parser\Wind.class
+ru\bellintegrator\yahoo_weather\parser\Result.class
+ru\bellintegrator\yahoo_weather\service\Authorization.class

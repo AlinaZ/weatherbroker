@@ -1,0 +1,14 @@
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Astronomy.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Wind.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\service\Authorization.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Location.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\service\YahooRequestInterface.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Result.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\jms\JMSSender.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\service\YahooRequest.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\CurrentObservation.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\jms\JMSReceiver.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Forecast.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Condition.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\parser\Atmosphere.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\yahoo_weather\src\main\java\ru\bellintegrator\yahoo_weather\jms\JMSListener.java

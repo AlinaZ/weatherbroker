@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="weatherparser" />
+        <module name="admin_api" />
+        <module name="exception" />
+        <module name="db_service" />
+        <module name="yahoo_weather" />
+        <module name="weather_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin_api" target="1.8" />
+      <module name="db_service" target="1.8" />
+      <module name="exception" target="1.8" />
+      <module name="weather_service" target="1.8" />
+      <module name="weatherbroker" target="1.8" />
+      <module name="weatherparser" target="1.8" />
+      <module name="yahoo_weather" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
