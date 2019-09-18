@@ -1,6 +1,6 @@
 package ru.bellintegrator.db_service.service.forecast;
 
-import ru.bellintegrator.db_service.dao.astronomy.ResultDao;
+import ru.bellintegrator.db_service.dao.ResultDao;
 import ru.bellintegrator.db_service.model.ForecastEntity;
 import ru.bellintegrator.db_service.model.LocationEntity;
 import ru.bellintegrator.weatherparser.Forecast;
@@ -37,4 +37,18 @@ public class ForecastServiceImpl implements ForecastService {
 
         }
     }
+
+    @Override
+    public Forecast mapForecastEntityToView(ForecastEntity forecastEntity){
+        Forecast forecastView=new Forecast();
+        forecastView.setDate(forecastEntity.getDate());
+        forecastView.setDay(forecastEntity.getDay());
+        forecastView.setText(forecastEntity.getText());
+        forecastView.setHigh(forecastEntity.getHigh());
+        forecastView.setLow(forecastEntity.getLow());
+        forecastView.setCode(forecastEntity.getCode());
+        return forecastView;
+    }
+
+
 }

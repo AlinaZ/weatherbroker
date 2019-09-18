@@ -1,6 +1,6 @@
 package ru.bellintegrator.db_service.service.wind;
 
-import ru.bellintegrator.db_service.dao.astronomy.ResultDao;
+import ru.bellintegrator.db_service.dao.ResultDao;
 import ru.bellintegrator.db_service.model.WindEntity;
 import ru.bellintegrator.db_service.model.CurrentObservationEntity;
 import ru.bellintegrator.weatherparser.Wind;
@@ -26,5 +26,14 @@ public class WindServiceImpl implements WindService {
 
         dao.saveWind(windEntity);
 
+    }
+
+    @Override
+    public Wind mapEntityToView(WindEntity windEntity){
+        Wind windView=new Wind();
+        windView.setChill(windEntity.getChill());
+        windView.setDirection(windEntity.getDirection());
+        windView.setSpeed(windEntity.getSpeed());
+        return windView;
     }
 }

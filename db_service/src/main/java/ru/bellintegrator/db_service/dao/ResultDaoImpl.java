@@ -1,4 +1,4 @@
-package ru.bellintegrator.db_service.dao.astronomy;
+package ru.bellintegrator.db_service.dao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +9,10 @@ import ru.bellintegrator.db_service.model.CurrentObservationEntity;
 import ru.bellintegrator.db_service.model.ForecastEntity;
 import ru.bellintegrator.db_service.model.LocationEntity;
 import ru.bellintegrator.db_service.model.WindEntity;
+import ru.bellintegrator.weatherparser.Forecast;
 
 import javax.persistence.*;
+import java.util.List;
 
 public class ResultDaoImpl implements ResultDao {
 
@@ -86,6 +88,17 @@ public class ResultDaoImpl implements ResultDao {
         return entityManager.find(LocationEntity.class,woeid);
     }
 
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public LocationEntity loadLocationByCity(String city) {
+        TypedQuery<LocationEntity> query = entityManager.createQuery(
+                "SELECT loc FROM LocationEntity AS loc WHERE loc.city="+city, LocationEntity.class);
+        return query.getSingleResult();
+    }
+
     /**
      * {@inheritDoc}
      */
@@ -96,6 +109,23 @@ public class ResultDaoImpl implements ResultDao {
                 "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity="+woeid+" AND c.pubDate="+date, CurrentObservationEntity.class);
         return query.getSingleResult();
     }
+
+    @Override
+    public CurrentObservationEntity loadLatestCOByLocation(Integer woeid){
+        TypedQuery<CurrentObservationEntity> query = entityManager.createQuery(
+                "SELECT c FROM CurrentObservationEntity AS c ORDER BY c.date DESC LIMIT 1 WHERE c.locationEntity="+woeid, CurrentObservationEntity.class);
+        return query.getSingleResult();
+    }
+
+    @Override
+    public List<ForecastEntity> load10DaysForecastsByCity(Integer woeid){
+        TypedQuery<ForecastEntity> query = entityManager.createQuery(
+                "SELECT f FROM ForecastEntity AS f " +
+                        "ORDER BY f.date DESC LIMIT 10" +
+                        "WHERE f.locationEntity="+woeid, ForecastEntity.class);
+        return query.getResultList();
+    }
+
 
 
 

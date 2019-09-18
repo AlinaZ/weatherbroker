@@ -9,6 +9,8 @@ public class Location implements Serializable {
     private String city;
     private String region;
     private String country;
+    private Double latitude;
+    private Double longitude;
 
     public Integer getWoeid() {
         return woeid;
@@ -33,9 +35,6 @@ public class Location implements Serializable {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
-
-    private Double latitude;
-    private Double longitude;
 
     public String getCity() {
         return city;

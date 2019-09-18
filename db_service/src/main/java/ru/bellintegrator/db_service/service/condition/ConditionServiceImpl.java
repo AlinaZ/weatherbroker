@@ -1,6 +1,6 @@
 package ru.bellintegrator.db_service.service.condition;
 
-import ru.bellintegrator.db_service.dao.astronomy.ResultDao;
+import ru.bellintegrator.db_service.dao.ResultDao;
 import ru.bellintegrator.db_service.model.ConditionEntity;
 import ru.bellintegrator.db_service.model.CurrentObservationEntity;
 import ru.bellintegrator.weatherparser.Condition;
@@ -25,5 +25,14 @@ public class ConditionServiceImpl implements ConditionService {
         conditionEntity.setCurrentObservation(currentObservationEntity);
         dao.saveCondition(conditionEntity);
 
+    }
+
+    @Override
+    public Condition mapEntityToView(ConditionEntity conditionEntity){
+        Condition conditionView=new Condition();
+        conditionView.setTemperature(conditionEntity.getTemperature());
+        conditionView.setCode(conditionEntity.getCode());
+        conditionView.setText(conditionEntity.getText());
+        return conditionView;
     }
 }

@@ -3,27 +3,28 @@ package ru.bellintegrator.weatherparser;
 import java.io.Serializable;
 
 
-public class Forecast implements Serializable{
+public class Forecast implements Serializable {
 
     //{"day":"Thu","date":1567054800,"low":53,"high":79,"text":"Sunny","code":32}
-
-    public Forecast() {
-    }
-
-   public Forecast(String day, String date, Integer low, Integer high, String text, Integer code) {
-        this.day = day;
-        this.date = date;
-        this.low = low;
-        this.high = high;
-        this.text = text;
-        this.code=code;
-    }
 
     private String date;
     private Integer low;
     private Integer high;
     private String text;
     private String day;
+    private Integer code;
+
+    public Forecast() {
+    }
+
+    public Forecast(String day, String date, Integer low, Integer high, String text, Integer code) {
+        this.day = day;
+        this.date = date;
+        this.low = low;
+        this.high = high;
+        this.text = text;
+        this.code = code;
+    }
 
     public Integer getCode() {
         return code;
@@ -32,8 +33,6 @@ public class Forecast implements Serializable{
     public void setCode(Integer code) {
         this.code = code;
     }
-
-    private Integer code;
 
     public String getDate() {
         return date;

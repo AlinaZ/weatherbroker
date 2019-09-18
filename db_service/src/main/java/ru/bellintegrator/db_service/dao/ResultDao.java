@@ -1,6 +1,8 @@
-package ru.bellintegrator.db_service.dao.astronomy;
+package ru.bellintegrator.db_service.dao;
 
 import ru.bellintegrator.db_service.model.*;
+
+import java.util.List;
 
 public interface ResultDao {
     void saveAstronomy(AstronomyEntity astronomy);
@@ -19,5 +21,11 @@ public interface ResultDao {
 
     LocationEntity loadLocationByWoeid(Integer woeid);
 
+    LocationEntity loadLocationByCity(String city);
+
     CurrentObservationEntity loadByLocationAndDate(Integer woeid, String date);
+
+    CurrentObservationEntity loadLatestCOByLocation(Integer woeid);
+
+    List<ForecastEntity> load10DaysForecastsByCity(Integer woeid);
 }

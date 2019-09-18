@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa4641bd-b841-4fad-8b44-6fec200e5e0b" name="Default Changelist" comment="" />
+    <list default="true" id="fa4641bd-b841-4fad-8b44-6fec200e5e0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ru_bellintegrator_dto_1_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/astronomy/ResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/astronomy/ResultDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/DBServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/DBServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/src/main/java/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/weather_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/weather_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Forecast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Location.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +55,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QdypPonWrUKnxkXvkrbSyDEJyM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaBellpractice-master/JavaBellpractice-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wildfly_weather_broker-master/wildfly_weather_broker-master" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.bellintegrator.db_service.dao" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,11 +96,28 @@
       <workItem from="1568114957882" duration="4507000" />
       <workItem from="1568181787596" duration="6557000" />
       <workItem from="1568266748177" duration="10254000" />
-      <workItem from="1568353005661" duration="9741000" />
+      <workItem from="1568353005661" duration="11127000" />
+      <workItem from="1568615856061" duration="3567000" />
+      <workItem from="1568698712793" duration="591000" />
+      <workItem from="1568786926927" duration="3001000" />
+      <workItem from="1568801835927" duration="9274000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

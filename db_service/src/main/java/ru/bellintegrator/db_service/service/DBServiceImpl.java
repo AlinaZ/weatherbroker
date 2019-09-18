@@ -6,7 +6,10 @@ import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.bellintegrator.db_service.dao.astronomy.ResultDao;
+import ru.bellintegrator.db_service.dao.ResultDao;
+import ru.bellintegrator.db_service.model.CurrentObservationEntity;
+import ru.bellintegrator.db_service.model.ForecastEntity;
+import ru.bellintegrator.db_service.model.LocationEntity;
 import ru.bellintegrator.db_service.service.astronomy.AstronomyService;
 import ru.bellintegrator.db_service.service.atmosphere.AtmosphereService;
 import ru.bellintegrator.db_service.service.condition.ConditionService;
@@ -15,10 +18,15 @@ import ru.bellintegrator.db_service.service.forecast.ForecastService;
 import ru.bellintegrator.db_service.service.location.LocationService;
 import ru.bellintegrator.db_service.service.wind.WindService;
 import ru.bellintegrator.exception.CustomException;
+import ru.bellintegrator.weatherparser.CurrentObservation;
+import ru.bellintegrator.weatherparser.Forecast;
+import ru.bellintegrator.weatherparser.Location;
 import ru.bellintegrator.weatherparser.Result;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 
 @ApplicationScoped
 public class DBServiceImpl extends HessianServlet implements DBService {
@@ -53,7 +61,24 @@ public class DBServiceImpl extends HessianServlet implements DBService {
     @Override
     @Transactional
     public Result getResult(String city) {
-        return null;
+        Result userView=new Result();
+
+        LocationEntity locationByCity=dao.loadLocationByCity(city);
+        Location locationView =locationService.mapEntityToView(locationByCity);
+        userView.setLocation(locationView);
+
+        List<ForecastEntity> forecastEntities=dao.load10DaysForecastsByCity(locationByCity.getWoeid());
+        List<Forecast> forecastViews=new ArrayList<>();
+        for (ForecastEntity forecastEntity:forecastEntities) {
+            forecastViews.add(forecastService.mapForecastEntityToView(forecastEntity));
+        }
+        userView.setForecasts(forecastViews);
+
+        CurrentObservationEntity currentObservationEntity=dao.loadLatestCOByLocation(locationByCity.getWoeid());
+        CurrentObservation currentObservationView =currentObservationService.mapEntityToView(currentObservationEntity);
+        userView.setCurrentObservation(currentObservationView);
+
+        return userView;
     }
 
     @Override

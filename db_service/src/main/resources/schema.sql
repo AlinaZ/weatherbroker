@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS Forecast (
     id          INTEGER  PRIMARY KEY AUTO_INCREMENT COMMENT '77711',
     version     INTEGER NOT NULL,
     day         VARCHAR(3)           COMMENT 'day of the week to which this forecast applies. Possible values are Mon Tue Wed Thu Fri Sat Sun (string)',
-    date        VARCHAR(20)          COMMENT 'the date to which this forecast applies. The date is in "dd Mmm yyyy" format, for example "30 Nov 2005" (string)',
+    date        VARCHAR(20)          COMMENT 'the date to which this forecast applies. UNIX |EPOCH FORMAT /The date is in "dd Mmm yyyy" format, for example "30 Nov 2005" (string)',
     low         INTEGER              COMMENT 'the forecasted low temperature for this day, in the units specified by the yweather:units element (integer)',
     high        INTEGER              COMMENT 'the forecasted high temperature for this day, in the units specified by the yweather:units element (integer)',
     text        VARCHAR(50)          COMMENT 'a textual description of conditions, for example, "Partly Cloudy" (string)',

@@ -1,6 +1,6 @@
 package ru.bellintegrator.db_service.service.location;
 
-import ru.bellintegrator.db_service.dao.astronomy.ResultDao;
+import ru.bellintegrator.db_service.dao.ResultDao;
 import ru.bellintegrator.weatherparser.Location;
 import ru.bellintegrator.db_service.model.LocationEntity;
 
@@ -27,6 +27,19 @@ public class LocationServiceImpl implements LocationService {
 
         System.out.println("********************************************************************"+locationEntity+"*****************************************************");
         dao.saveLocation(locationEntity);
+    }
+
+    @Override
+    public Location mapEntityToView(LocationEntity locationEntity){
+        Location locationView=new Location();
+        locationView.setCity(locationEntity.getCity());
+        locationView.setCountry(locationEntity.getCountry());
+        locationView.setRegion(locationEntity.getRegion());
+        locationView.setWoeid(locationEntity.getWoeid());
+        locationView.setLatitude(locationEntity.getLatitude());
+        locationView.setLongitude(locationEntity.getLongitude());
+        return locationView;
+
     }
 
 
