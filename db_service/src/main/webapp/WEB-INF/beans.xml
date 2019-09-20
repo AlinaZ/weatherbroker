@@ -6,12 +6,22 @@
       http://xmlns.jcp.org/xml/ns/javaee
       http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd" bean-discovery-mode="all">
 
-    <bean name="/UserService"
+   <!-- <bean name="/UserService"
           class="org.springframework.remoting.caucho.HessianServiceExporter">
-        <property name="controller" ref="userService" />
+        <property name="ru.bellintegrator.weather_service.controller" ref="userService" />
         <property name="serviceInterface" value="server.IUserService" />
     </bean>
 
     <bean id="userService" class="server.UserService" />
 
-</beans>
+</beans> -->
+
+<bean name="/UserService"
+      class="org.springframework.remoting.caucho.HessianServiceExporter">
+<property name="service" ref="userService" />
+<property name="serviceInterface" value="server.IUserService" />
+</bean>
+
+<bean id="userService" class="server.UserService" />
+
+        </beans>

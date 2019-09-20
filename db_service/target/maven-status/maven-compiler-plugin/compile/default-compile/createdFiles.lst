@@ -5,12 +5,12 @@ ru\bellintegrator\db_service\service\condition\ConditionService.class
 ru\bellintegrator\db_service\service\forecast\ForecastServiceImpl.class
 ru\bellintegrator\db_service\service\astronomy\AstronomyService.class
 ru\bellintegrator\db_service\service\atmosphere\AtmosphereService.class
+ru\bellintegrator\db_service\dao\ResultDaoImpl.class
 ru\bellintegrator\db_service\model\AtmosphereEntity.class
 ru\bellintegrator\db_service\service\currentobservation\CurrentObservationService.class
 ru\bellintegrator\db_service\service\forecast\ForecastService.class
 ru\bellintegrator\db_service\service\condition\ConditionServiceImpl.class
 ru\bellintegrator\db_service\service\location\LocationService.class
-ru\bellintegrator\db_service\dao\astronomy\ResultDao.class
 ru\bellintegrator\db_service\service\currentobservation\CurrentObservationServiceImpl.class
 ru\bellintegrator\db_service\service\DBService.class
 ru\bellintegrator\db_service\service\wind\WindServiceImpl.class
@@ -21,7 +21,7 @@ ru\bellintegrator\db_service\service\astronomy\AstronomyServiceImpl.class
 ru\bellintegrator\db_service\model\ResultEntity.class
 ru\bellintegrator\db_service\model\ConditionEntity.class
 ru\bellintegrator\db_service\service\location\LocationServiceImpl.class
-ru\bellintegrator\db_service\dao\astronomy\ResultDaoImpl.class
 ru\bellintegrator\db_service\service\DBServiceImpl.class
+ru\bellintegrator\db_service\dao\ResultDao.class
 ru\bellintegrator\db_service\jms\JMSListener.class
 ru\bellintegrator\db_service\service\atmosphere\AtmosphereServiceImpl.class

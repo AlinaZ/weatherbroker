@@ -95,7 +95,7 @@ public class ResultDaoImpl implements ResultDao {
     @Override
     public LocationEntity loadLocationByCity(String city) {
         TypedQuery<LocationEntity> query = entityManager.createQuery(
-                "SELECT loc FROM LocationEntity AS loc WHERE loc.city="+city, LocationEntity.class);
+                "SELECT loc FROM LocationEntity AS loc WHERE loc.city='"+city+"'", LocationEntity.class);
         return query.getSingleResult();
     }
 
@@ -113,7 +113,8 @@ public class ResultDaoImpl implements ResultDao {
     @Override
     public CurrentObservationEntity loadLatestCOByLocation(Integer woeid){
         TypedQuery<CurrentObservationEntity> query = entityManager.createQuery(
-                "SELECT c FROM CurrentObservationEntity AS c ORDER BY c.date DESC LIMIT 1 WHERE c.locationEntity="+woeid, CurrentObservationEntity.class);
+                "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity="+woeid + "ORDER BY c.pubDate DESC", CurrentObservationEntity.class);
+        query.setMaxResults(1);
         return query.getSingleResult();
     }
 
@@ -121,8 +122,8 @@ public class ResultDaoImpl implements ResultDao {
     public List<ForecastEntity> load10DaysForecastsByCity(Integer woeid){
         TypedQuery<ForecastEntity> query = entityManager.createQuery(
                 "SELECT f FROM ForecastEntity AS f " +
-                        "ORDER BY f.date DESC LIMIT 10" +
-                        "WHERE f.locationEntity="+woeid, ForecastEntity.class);
+                         "WHERE f.locationEntity="+woeid+" ORDER BY f.date DESC", ForecastEntity.class);
+        query.setMaxResults(10);
         return query.getResultList();
     }
 

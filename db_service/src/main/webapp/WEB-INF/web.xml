@@ -10,8 +10,8 @@
     </servlet>
 
     <servlet-mapping>
-        <url-pattern>/weather</url-pattern>
         <servlet-name>dbservice</servlet-name>
+        <url-pattern>/weather</url-pattern>
     </servlet-mapping>
 
 </web-app>

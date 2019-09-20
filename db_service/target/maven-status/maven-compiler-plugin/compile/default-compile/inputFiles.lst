@@ -1,7 +1,5 @@
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\AtmosphereEntity.java
-C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\dao\astronomy\ResultDao.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\LocationEntity.java
-C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\dao\astronomy\ResultDaoImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\ConditionEntity.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\atmosphere\AtmosphereServiceImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\astronomy\AstronomyServiceImpl.java
@@ -19,7 +17,9 @@ C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroke
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\currentobservation\CurrentObservationService.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\location\LocationService.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\ForecastEntity.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\dao\ResultDao.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\CurrentObservationEntity.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\dao\ResultDaoImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\currentobservation\CurrentObservationServiceImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\forecast\ForecastServiceImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\condition\ConditionService.java

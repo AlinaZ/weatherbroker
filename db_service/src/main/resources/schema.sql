@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Location (
     woeid       INTEGER  PRIMARY KEY COMMENT 'identifier',
-    version     INTEGER  NOT NULL    COMMENT 'hibernate controller field',
+    version     INTEGER  NOT NULL    COMMENT 'hibernate ru.bellintegrator.weather_service.controller field',
     city        VARCHAR(50)          COMMENT 'city name (string)',
     region      VARCHAR(100)         COMMENT 'state, territory, or region, if given (string)',
     country     VARCHAR(50)           COMMENT 'two-character country code. (string)',
