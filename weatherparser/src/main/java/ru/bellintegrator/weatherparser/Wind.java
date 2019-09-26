@@ -2,7 +2,7 @@ package ru.bellintegrator.weatherparser;
 
 import java.io.Serializable;
 
-public class Wind implements Serializable {
+public class Wind extends WeatherElement implements Serializable {
     //"wind":{"chill":64,"direction":155,"speed":8.08}
 
     private Integer chill;

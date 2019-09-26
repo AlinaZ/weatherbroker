@@ -3,7 +3,7 @@ package ru.bellintegrator.weatherparser;
 import java.io.Serializable;
 
 //@JsonIgnoreProperties(ignoreUnknown = true)
-public class Location implements Serializable {
+public class Location extends WeatherElement implements Serializable {
 
     private Integer woeid;
     private String city;

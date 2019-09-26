@@ -18,10 +18,7 @@ import ru.bellintegrator.db_service.service.forecast.ForecastService;
 import ru.bellintegrator.db_service.service.location.LocationService;
 import ru.bellintegrator.db_service.service.wind.WindService;
 import ru.bellintegrator.exception.CustomException;
-import ru.bellintegrator.weatherparser.CurrentObservation;
-import ru.bellintegrator.weatherparser.Forecast;
-import ru.bellintegrator.weatherparser.Location;
-import ru.bellintegrator.weatherparser.Result;
+import ru.bellintegrator.weatherparser.*;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -31,7 +28,7 @@ import java.util.List;
 @ApplicationScoped
 public class DBServiceImpl extends HessianServlet implements DBService {
 
-    private final Logger LOG= LoggerFactory.getLogger(DBServiceImpl.class);
+    private final Logger LOG = LoggerFactory.getLogger(DBServiceImpl.class);
 
     @Inject
     private ResultDao dao;
@@ -61,23 +58,35 @@ public class DBServiceImpl extends HessianServlet implements DBService {
     @Override
     @Transactional
     public Result getResult(String city) {
-        Result userView=new Result();
+        Result userView = new Result();
 
-        LocationEntity locationByCity=dao.loadLocationByCity(city);
-        Location locationView =locationService.mapEntityToView(locationByCity);
-        userView.setLocation(locationView);
-
-        List<ForecastEntity> forecastEntities=dao.load10DaysForecastsByCity(locationByCity.getWoeid());
-        List<Forecast> forecastViews=new ArrayList<>();
-        for (ForecastEntity forecastEntity:forecastEntities) {
-            forecastViews.add(forecastService.mapForecastEntityToView(forecastEntity));
+        LocationEntity locationByCity = dao.loadLocationByCity(city);
+        if (locationByCity == null) {
+            return null;
+        } else {
+            Location locationView = locationService.mapEntityToView(locationByCity);
+            userView.setLocation(locationView);
         }
-        userView.setForecasts(forecastViews);
 
-        CurrentObservationEntity currentObservationEntity=dao.loadLatestCOByLocation(locationByCity.getWoeid());
-        CurrentObservation currentObservationView =currentObservationService.mapEntityToView(currentObservationEntity);
-        userView.setCurrentObservation(currentObservationView);
+        List<ForecastEntity> forecastEntities = dao.load10DaysForecastsByCity(locationByCity.getWoeid());
+        if (forecastEntities == null) {
+            return null;
+        } else {
+            List<Forecast> forecastViews = new ArrayList<>();
+            for (ForecastEntity forecastEntity : forecastEntities) {
+                forecastViews.add(forecastService.mapEntityToView(forecastEntity));
+            }
+            userView.setForecasts(forecastViews);
+        }
 
+
+        CurrentObservationEntity currentObservationEntity = dao.loadLatestCOByLocation(locationByCity.getWoeid());
+        if (currentObservationEntity == null) {
+            return null;
+        } else {
+            CurrentObservation currentObservationView = currentObservationService.mapEntityToView(currentObservationEntity);
+            userView.setCurrentObservation(currentObservationView);
+        }
         return userView;
     }
 
@@ -85,39 +94,44 @@ public class DBServiceImpl extends HessianServlet implements DBService {
     @Transactional
     public void saveResult(Result resultJson) throws CustomException {
 
-        locationService.saveLocation(resultJson.getLocation());
-        LOG.info("Location saved succesfully: {}",resultJson.getLocation());
+        locationService.saveElement(resultJson.getLocation(),new LocationEntity());
+        LOG.info("Location saved successfully: {}", resultJson.getLocation());
 
-        forecastService.saveForecasts(resultJson.getForecasts(),resultJson.getLocation());
-        LOG.info("Forecast saved succesfully: {}",resultJson.getForecasts());
+        List<Forecast> forecastJsons=resultJson.getForecasts();
+        LocationEntity locationEntity = dao.loadLocationByWoeid(resultJson.getLocation().getWoeid());
+        for(Forecast oneDayForecast : forecastJsons) {
+            forecastService.saveElement(oneDayForecast,locationEntity);
+        }
+
+        LOG.info("Forecast saved successfully: {}", resultJson.getForecasts());
 
         LOG.info("TRANSACTION SUCCESSFUL, LOCATION AND FORECASTS SAVED TO DB");
     }
 
     @Override
-    public void saveCurObserv(Result resultJson){
-        currentObservationService.saveCurrentObservation(resultJson.getCurrentObservation().getPubDate(),resultJson.getLocation());
-        LOG.info("CurrentObservation saved succesfully: {}",resultJson.getCurrentObservation());
+    public void saveCurObserv(Result resultJson) {
+        currentObservationService.saveElement(resultJson.getCurrentObservation(), dao.loadLocationByWoeid(resultJson.getLocation().getWoeid()));
+        LOG.info("CurrentObservation saved successfully: {}", resultJson.getCurrentObservation());
     }
 
     @Override
     @Transactional
     public void saveCurObservDetails(Result resultJson) {
-        astronomyService.saveAstronomy(resultJson.getCurrentObservation().getAstronomy(),
-                dao.loadByLocationAndDate(resultJson.getLocation().getWoeid(),resultJson.getCurrentObservation().getPubDate()));
-        LOG.info("Astronomy info saved succesfully: {}",resultJson.getCurrentObservation().getAstronomy());
+        astronomyService.saveElement(resultJson.getCurrentObservation().getAstronomy(),
+                dao.loadCOByLocationAndDate(resultJson.getLocation().getWoeid(), resultJson.getCurrentObservation().getPubDate()));
+        LOG.info("Astronomy info saved successfully: {}", resultJson.getCurrentObservation().getAstronomy());
 
-        atmosphereService.saveAtmosphere(resultJson.getCurrentObservation().getAtmosphere(),
-                dao.loadByLocationAndDate(resultJson.getLocation().getWoeid(),resultJson.getCurrentObservation().getPubDate()));
-        LOG.info("Atmosphere info saved succesfully: {}",resultJson.getCurrentObservation().getAtmosphere());
+        atmosphereService.saveElement(resultJson.getCurrentObservation().getAtmosphere(),
+                dao.loadCOByLocationAndDate(resultJson.getLocation().getWoeid(), resultJson.getCurrentObservation().getPubDate()));
+        LOG.info("Atmosphere info saved successfully: {}", resultJson.getCurrentObservation().getAtmosphere());
 
-        conditionService.saveCondition(resultJson.getCurrentObservation().getCondition(),
-                dao.loadByLocationAndDate(resultJson.getLocation().getWoeid(),resultJson.getCurrentObservation().getPubDate()));
-        LOG.info("Condition info saved succesfully: {}",resultJson.getCurrentObservation().getCondition());
+        conditionService.saveElement(resultJson.getCurrentObservation().getCondition(),
+                dao.loadCOByLocationAndDate(resultJson.getLocation().getWoeid(), resultJson.getCurrentObservation().getPubDate()));
+        LOG.info("Condition info saved successfully: {}", resultJson.getCurrentObservation().getCondition());
 
-        windService.saveWind(resultJson.getCurrentObservation().getWind(),
-                dao.loadByLocationAndDate(resultJson.getLocation().getWoeid(),resultJson.getCurrentObservation().getPubDate()));
-        LOG.info("Wind info saved succesfully: {}",resultJson.getCurrentObservation().getWind());
+        windService.saveElement(resultJson.getCurrentObservation().getWind(),
+                dao.loadCOByLocationAndDate(resultJson.getLocation().getWoeid(), resultJson.getCurrentObservation().getPubDate()));
+        LOG.info("Wind info saved successfully: {}", resultJson.getCurrentObservation().getWind());
 
         LOG.info("TRANSACTION SUCCESSFUL, CURRENT_OBSERVATION DETAILS SAVED TO DB");
     }

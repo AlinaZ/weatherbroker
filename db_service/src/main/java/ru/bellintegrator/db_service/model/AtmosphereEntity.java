@@ -10,7 +10,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name="Atmosphere")
-public class AtmosphereEntity implements Serializable {
+public class AtmosphereEntity extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 803745049486954975L;
 

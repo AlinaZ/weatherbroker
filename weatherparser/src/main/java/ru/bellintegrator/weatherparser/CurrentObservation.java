@@ -3,7 +3,7 @@ package ru.bellintegrator.weatherparser;
 import java.io.Serializable;
 
 
-public class CurrentObservation implements Serializable{
+public class CurrentObservation extends WeatherElement implements Serializable{
 
     //current_observation":
     // {"wind":{"chill":64,"direction":155,"speed":8.08},

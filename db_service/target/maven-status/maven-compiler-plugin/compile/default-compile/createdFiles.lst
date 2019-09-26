@@ -21,7 +21,9 @@ ru\bellintegrator\db_service\service\astronomy\AstronomyServiceImpl.class
 ru\bellintegrator\db_service\model\ResultEntity.class
 ru\bellintegrator\db_service\model\ConditionEntity.class
 ru\bellintegrator\db_service\service\location\LocationServiceImpl.class
+ru\bellintegrator\db_service\service\WeatherElementService.class
 ru\bellintegrator\db_service\service\DBServiceImpl.class
 ru\bellintegrator\db_service\dao\ResultDao.class
 ru\bellintegrator\db_service\jms\JMSListener.class
+ru\bellintegrator\db_service\model\BaseEntity.class
 ru\bellintegrator\db_service\service\atmosphere\AtmosphereServiceImpl.class

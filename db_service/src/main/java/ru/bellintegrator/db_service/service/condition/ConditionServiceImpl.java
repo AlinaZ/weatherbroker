@@ -15,7 +15,7 @@ public class ConditionServiceImpl implements ConditionService {
     private ResultDao dao;
 
     @Override
-    public void saveCondition(Condition conditionJson, CurrentObservationEntity currentObservationEntity) {
+    public void saveElement(Condition conditionJson, CurrentObservationEntity currentObservationEntity) {
         ConditionEntity conditionEntity = new ConditionEntity();
         conditionEntity.setText(conditionJson.getText());
         conditionEntity.setCode(conditionJson.getCode());

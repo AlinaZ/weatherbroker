@@ -2,7 +2,7 @@ package ru.bellintegrator.weatherparser;
 
 import java.io.Serializable;
 
-public class Condition implements Serializable {
+public class Condition extends WeatherElement implements Serializable {
     //"condition":{"text":"Mostly Cloudy","code":27,"temperature":64}
 
     private String text;

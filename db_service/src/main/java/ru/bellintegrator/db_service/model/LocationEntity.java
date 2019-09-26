@@ -11,7 +11,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name="Location")
-public class LocationEntity implements Serializable {
+public class LocationEntity extends BaseEntity implements Serializable {
 
     @Id
     @Column(name = "woeid", unique = true)

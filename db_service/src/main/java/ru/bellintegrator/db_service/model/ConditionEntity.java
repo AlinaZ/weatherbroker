@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Conditio")
-public class ConditionEntity implements Serializable {
+public class ConditionEntity extends BaseEntity implements Serializable {
 
     @Id
     private Integer id;

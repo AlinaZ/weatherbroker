@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.util.List;
 
-public class Result implements Serializable {
+public class Result extends WeatherElement implements Serializable {
 
     public Result() {
     }

@@ -15,7 +15,7 @@ public class AtmosphereServiceImpl implements AtmosphereService {
     private ResultDao dao;
 
     @Override
-    public void saveAtmosphere(Atmosphere atmosphereJson, CurrentObservationEntity currentObservationEntity){
+    public void saveElement(Atmosphere atmosphereJson, CurrentObservationEntity currentObservationEntity){
         AtmosphereEntity atmosphereEntity=new AtmosphereEntity();
         atmosphereEntity.setHumidity(atmosphereJson.getHumidity());
         atmosphereEntity.setVisibility(atmosphereJson.getVisibility());

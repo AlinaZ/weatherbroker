@@ -9,7 +9,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name="Forecast")
-public class ForecastEntity implements Serializable {
+public class ForecastEntity extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -3,7 +3,7 @@ package ru.bellintegrator.db_service.model;
 import java.io.Serializable;
 import java.util.List;
 
-public class ResultEntity implements Serializable {
+public class ResultEntity extends BaseEntity implements Serializable {
 
     public ResultEntity() {
     }

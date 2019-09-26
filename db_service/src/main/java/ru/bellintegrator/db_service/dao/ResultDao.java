@@ -4,7 +4,10 @@ import ru.bellintegrator.db_service.model.*;
 
 import java.util.List;
 
-public interface ResultDao {
+public interface ResultDao{
+
+    /*<B extends BaseEntity> void saveEntityToDB  (B entity);*/
+
     void saveAstronomy(AstronomyEntity astronomy);
 
     void saveAtmosphere(AtmosphereEntity atmosphere);
@@ -23,7 +26,7 @@ public interface ResultDao {
 
     LocationEntity loadLocationByCity(String city);
 
-    CurrentObservationEntity loadByLocationAndDate(Integer woeid, String date);
+    CurrentObservationEntity loadCOByLocationAndDate(Integer woeid, String date);
 
     CurrentObservationEntity loadLatestCOByLocation(Integer woeid);
 

@@ -15,22 +15,18 @@ public class WindServiceImpl implements WindService {
     private ResultDao dao;
 
     @Override
-    public void saveWind(Wind windJson, CurrentObservationEntity currentObservationEntity) {
+    public void saveElement(Wind windJson, CurrentObservationEntity currentObservationEntity) {
         WindEntity windEntity = new WindEntity();
         windEntity.setChill(windJson.getChill());
         windEntity.setDirection(windJson.getDirection());
         windEntity.setSpeed(windJson.getSpeed());
-
-
         windEntity.setCurrentObservation(currentObservationEntity);
-
         dao.saveWind(windEntity);
-
     }
 
     @Override
-    public Wind mapEntityToView(WindEntity windEntity){
-        Wind windView=new Wind();
+    public Wind mapEntityToView(WindEntity windEntity) {
+        Wind windView = new Wind();
         windView.setChill(windEntity.getChill());
         windView.setDirection(windEntity.getDirection());
         windView.setSpeed(windEntity.getSpeed());

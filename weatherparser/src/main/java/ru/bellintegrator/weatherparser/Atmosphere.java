@@ -2,7 +2,7 @@ package ru.bellintegrator.weatherparser;
 
 import java.io.Serializable;
 
-public class Atmosphere implements Serializable {
+public class Atmosphere extends WeatherElement implements Serializable {
     //"atmosphere":{"humidity":78,"visibility":10.0,"pressure":28.82,"rising":0}
 
     private Integer humidity;

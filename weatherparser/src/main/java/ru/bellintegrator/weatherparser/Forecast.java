@@ -3,7 +3,7 @@ package ru.bellintegrator.weatherparser;
 import java.io.Serializable;
 
 
-public class Forecast implements Serializable {
+public class Forecast extends WeatherElement implements Serializable {
 
     //{"day":"Thu","date":1567054800,"low":53,"high":79,"text":"Sunny","code":32}
 

@@ -1,2 +1,5 @@
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\java\ru\bellintegrator\weather_service\service_interfaces\DBService.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\java\ru\bellintegrator\weather_service\exception\ErrorResponse.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\java\ru\bellintegrator\weather_service\exception\WeatherNotFoundException.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\java\ru\bellintegrator\weather_service\exception\ExceptionsHandler.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\java\ru\bellintegrator\weather_service\controller\UserController.java

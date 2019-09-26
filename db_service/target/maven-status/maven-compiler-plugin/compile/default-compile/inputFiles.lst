@@ -1,8 +1,10 @@
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\AtmosphereEntity.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\LocationEntity.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\WeatherElementService.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\ConditionEntity.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\atmosphere\AtmosphereServiceImpl.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\astronomy\AstronomyServiceImpl.java
+C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\BaseEntity.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\ResultEntity.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\service\atmosphere\AtmosphereService.java
 C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\db_service\src\main\java\ru\bellintegrator\db_service\model\WindEntity.java

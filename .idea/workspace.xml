@@ -2,53 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa4641bd-b841-4fad-8b44-6fec200e5e0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/weather_service_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/weather_service_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather_service/src/main/webapp/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/dao/ResultDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/dao/astronomy/ResultDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/dao/astronomy/ResultDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/AstronomyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/AstronomyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/AtmosphereEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/AtmosphereEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ConditionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ConditionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/CurrentObservationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/CurrentObservationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ForecastEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ForecastEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/LocationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/LocationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ResultEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/ResultEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/WindEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/model/WindEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/DBServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/DBServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/location/LocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/ru/bellintegrator/db_service/service/wind/WindServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/dao/ResultDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/dao/ResultDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/AstronomyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/AstronomyEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/AtmosphereEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/AtmosphereEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ConditionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ConditionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/CurrentObservationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/CurrentObservationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ForecastEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ForecastEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/LocationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/LocationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ResultEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/ResultEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/WindEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/model/WindEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/DBServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/DBServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/condition/ConditionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/condition/ConditionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/forecast/ForecastService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/forecast/ForecastService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/location/LocationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/location/LocationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/location/LocationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/location/LocationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/wind/WindService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/wind/WindService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/wind/WindServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/ru/bellintegrator/db_service/service/wind/WindServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/classes/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/dao/astronomy/ResultDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/dao/astronomy/ResultDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/dao/ResultDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/dao/ResultDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/AstronomyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/AstronomyEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/AtmosphereEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/AtmosphereEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ConditionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ConditionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/CurrentObservationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/CurrentObservationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ForecastEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ForecastEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/LocationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/LocationEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ResultEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/ResultEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/WindEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/model/WindEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/DBServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/DBServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/astronomy/AstronomyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/atmosphere/AtmosphereServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/condition/ConditionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/condition/ConditionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/condition/ConditionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/currentobservation/CurrentObservationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/forecast/ForecastService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/forecast/ForecastService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/forecast/ForecastServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/location/LocationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/location/LocationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/location/LocationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/location/LocationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/wind/WindService.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/wind/WindService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/wind/WindServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/db_service/service/wind/WindServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/classes/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/lib/exception-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/lib/exception-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/lib/weatherparser-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/db_service-1.0-SNAPSHOT/WEB-INF/lib/weatherparser-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/maven-archiver/pom.properties" afterDir="false" />
@@ -56,14 +66,37 @@
       <change beforePath="$PROJECT_DIR$/db_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exception/target/exception-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/exception/target/exception-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exception/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exception/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_service/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/src/main/java/ru/bellintegrator/weather_service/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_service/weather_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/weather_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/src/main/java/ru/bellintegrator/weather_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/src/main/java/ru/bellintegrator/weather_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/classes/ru/bellintegrator/weather_service/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/classes/ru/bellintegrator/weather_service/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/weather_service/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/classes/ru/bellintegrator/weather_service/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/lib/exception-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/lib/exception-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/lib/weatherparser-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/weather_service/target/weather_service-1.0-SNAPSHOT/WEB-INF/lib/weatherparser-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Astronomy.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Astronomy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Atmosphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Atmosphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/CurrentObservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/CurrentObservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Forecast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/src/main/java/ru/bellintegrator/weatherparser/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Astronomy.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Astronomy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Atmosphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Atmosphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Condition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/CurrentObservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/CurrentObservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Forecast.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Forecast.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Wind.class" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/classes/ru/bellintegrator/weatherparser/Wind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherparser/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherparser/target/weatherparser-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/target/weatherparser-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yahoo_weather/target/classes/ru/bellintegrator/yahoo_weather/jms/JMSListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_weather/target/classes/ru/bellintegrator/yahoo_weather/jms/JMSListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherparser/weatherparser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weatherparser/weatherparser.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yahoo_weather/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_weather/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yahoo_weather/target/yahoo_weather-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_weather/target/yahoo_weather-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
@@ -90,8 +123,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -105,26 +140,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weather_service/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\resources\META-INF" />
-      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\webapp" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.bellintegrator.weather_service" />
       <recent name="ru.bellintegrator.db_service.dao" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weatherparser\src\main\WEB-INF" />
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.bellintegrator.weather_service.service_interfaces" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weatherparser\src\main" />
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\resources\META-INF" />
+      <recent name="C:\Users\admin\Downloads\AlinaZK-weatherbroker-ff5498a19feb\AlinaZK-weatherbroker-ff5498a19feb\weather_service\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,7 +196,12 @@
       <workItem from="1568801835927" duration="9274000" />
       <workItem from="1568876447326" duration="1667000" />
       <workItem from="1568880747434" duration="11445000" />
-      <workItem from="1568958985119" duration="8470000" />
+      <workItem from="1568958985119" duration="8777000" />
+      <workItem from="1569218824696" duration="13439000" />
+      <workItem from="1569324529109" duration="593000" />
+      <workItem from="1569390185640" duration="12330000" />
+      <workItem from="1569416768756" duration="2299000" />
+      <workItem from="1569477993104" duration="11991000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name="Wind")
-public class WindEntity implements Serializable {
+public class WindEntity extends BaseEntity implements Serializable {
 
 
     @Id

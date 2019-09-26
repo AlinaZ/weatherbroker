@@ -17,7 +17,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Current_observation")
-public class CurrentObservationEntity implements Serializable {
+public class CurrentObservationEntity extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

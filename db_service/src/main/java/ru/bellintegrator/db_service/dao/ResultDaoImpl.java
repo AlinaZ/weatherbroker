@@ -2,13 +2,7 @@ package ru.bellintegrator.db_service.dao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.bellintegrator.db_service.model.AstronomyEntity;
-import ru.bellintegrator.db_service.model.AtmosphereEntity;
-import ru.bellintegrator.db_service.model.ConditionEntity;
-import ru.bellintegrator.db_service.model.CurrentObservationEntity;
-import ru.bellintegrator.db_service.model.ForecastEntity;
-import ru.bellintegrator.db_service.model.LocationEntity;
-import ru.bellintegrator.db_service.model.WindEntity;
+import ru.bellintegrator.db_service.model.*;
 import ru.bellintegrator.weatherparser.Forecast;
 
 import javax.persistence.*;
@@ -16,10 +10,11 @@ import java.util.List;
 
 public class ResultDaoImpl implements ResultDao {
 
-    private final Logger LOG= LoggerFactory.getLogger(ResultDaoImpl.class);
+    private final Logger LOG = LoggerFactory.getLogger(ResultDaoImpl.class);
 
     @PersistenceContext(unitName = "1")
     private EntityManager entityManager;
+
 
     /**
      * {@inheritDoc}
@@ -42,7 +37,7 @@ public class ResultDaoImpl implements ResultDao {
      * {@inheritDoc}
      */
     @Override
-    public void saveWind(WindEntity wind) { entityManager.persist(wind); }
+    public void saveWind(WindEntity wind) { entityManager.persist(wind);     }
 
     /**
      * {@inheritDoc}
@@ -72,10 +67,10 @@ public class ResultDaoImpl implements ResultDao {
      */
     @Override
     public void saveLocation(LocationEntity location) {
-        if(loadLocationByWoeid(location.getWoeid())==null){
-        entityManager.persist(location);
-        LOG.info("LOCATION PERSISTED");}
-        else {
+        if (loadLocationByWoeid(location.getWoeid()) == null) {
+            entityManager.persist(location);
+            LOG.info("LOCATION PERSISTED");
+        } else {
             LOG.info("THIS LOCATION ALREADY EXISTS IN DATABASE");
         }
     }
@@ -84,8 +79,8 @@ public class ResultDaoImpl implements ResultDao {
      * {@inheritDoc}
      */
     @Override
-    public LocationEntity loadLocationByWoeid(Integer woeid){
-        return entityManager.find(LocationEntity.class,woeid);
+    public LocationEntity loadLocationByWoeid(Integer woeid) {
+        return entityManager.find(LocationEntity.class, woeid);
     }
 
 
@@ -95,51 +90,54 @@ public class ResultDaoImpl implements ResultDao {
     @Override
     public LocationEntity loadLocationByCity(String city) {
         TypedQuery<LocationEntity> query = entityManager.createQuery(
-                "SELECT loc FROM LocationEntity AS loc WHERE loc.city='"+city+"'", LocationEntity.class);
-        return query.getSingleResult();
+                "SELECT loc FROM LocationEntity AS loc WHERE loc.city='" + city + "'", LocationEntity.class);
+        try {
+            return query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public CurrentObservationEntity loadByLocationAndDate(Integer woeid, String date){
+    public CurrentObservationEntity loadCOByLocationAndDate(Integer woeid, String date) {
         //LocationEntity locationEntity=loadLocationByWoeid(woeid);
         TypedQuery<CurrentObservationEntity> query = entityManager.createQuery(
-                "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity="+woeid+" AND c.pubDate="+date, CurrentObservationEntity.class);
-        return query.getSingleResult();
-    }
-
-    @Override
-    public CurrentObservationEntity loadLatestCOByLocation(Integer woeid){
-        TypedQuery<CurrentObservationEntity> query = entityManager.createQuery(
-                "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity="+woeid + "ORDER BY c.pubDate DESC", CurrentObservationEntity.class);
+                "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity=" + woeid + " AND c.pubDate=" + date, CurrentObservationEntity.class);
         query.setMaxResults(1);
-        return query.getSingleResult();
+        try {
+            return query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
-    public List<ForecastEntity> load10DaysForecastsByCity(Integer woeid){
+    public CurrentObservationEntity loadLatestCOByLocation(Integer woeid) {
+        TypedQuery<CurrentObservationEntity> query = entityManager.createQuery(
+                "SELECT c FROM CurrentObservationEntity AS c WHERE c.locationEntity=" + woeid + "ORDER BY c.pubDate DESC", CurrentObservationEntity.class);
+        query.setMaxResults(1);
+        try {
+            return query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public List<ForecastEntity> load10DaysForecastsByCity(Integer woeid) {
         TypedQuery<ForecastEntity> query = entityManager.createQuery(
                 "SELECT f FROM ForecastEntity AS f " +
-                         "WHERE f.locationEntity="+woeid+" ORDER BY f.date DESC", ForecastEntity.class);
+                        "WHERE f.locationEntity=" + woeid + " ORDER BY f.date DESC", ForecastEntity.class);
         query.setMaxResults(10);
-        return query.getResultList();
+        try {
+            return query.getResultList();
+        } catch (NoResultException e) {
+            return null;
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

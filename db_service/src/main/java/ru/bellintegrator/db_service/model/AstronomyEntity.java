@@ -2,6 +2,7 @@ package ru.bellintegrator.db_service.model;
 
 import java.io.Serializable;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.*;
 
 import java.util.Objects;
@@ -9,9 +10,10 @@ import java.util.Objects;
 /**
  * Информация о текущих астрономических условиях
  */
+//@ApplicationScoped
 @Entity
 @Table(name="Astronomy")
-public class AstronomyEntity implements Serializable {
+public class AstronomyEntity extends BaseEntity implements Serializable {
 
    @Id
     private Integer id;

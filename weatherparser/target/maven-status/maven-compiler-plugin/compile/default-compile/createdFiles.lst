@@ -4,5 +4,6 @@ ru\bellintegrator\weatherparser\Forecast.class
 ru\bellintegrator\weatherparser\Location.class
 ru\bellintegrator\weatherparser\Result.class
 ru\bellintegrator\weatherparser\Wind.class
+ru\bellintegrator\weatherparser\WeatherElement.class
 ru\bellintegrator\weatherparser\CurrentObservation.class
 ru\bellintegrator\weatherparser\Astronomy.class
