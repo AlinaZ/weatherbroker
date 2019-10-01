@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-
+<pr>This is error page, it means you did not enter location info correctly</pr>
 </body>
 </html>

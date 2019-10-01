@@ -23,7 +23,7 @@ public class LocationEntity extends BaseEntity implements Serializable {
     @Column(name = "city", length = 25)
     private String city;
 
-    @Column(name = "region", length = 25)
+    @Column(name = "region", length = 100)
     private String region;
 
     @Column(name = "country", length = 50)

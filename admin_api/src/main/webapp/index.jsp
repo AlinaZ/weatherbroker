@@ -12,8 +12,8 @@
 
 
 <form action="admin" method="get">
-    Введите название города для загрузки погоды в БД: <input type="text" name = "city" ><br/>
-
+    Введите название города для загрузки погоды в БД (например, ufa): <input type="text" name = "city" ><br/>
+    Введите двухбуквенный код страны или штата (например, ru): <input type="text" name = "region" ><br/>
     <input type="submit" value="Submit">
 </form>
 

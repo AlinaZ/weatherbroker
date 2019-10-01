@@ -3,6 +3,8 @@ package ru.bellintegrator.yahoo_weather.jms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import ru.bellintegrator.exception.CustomException;
+import ru.bellintegrator.weatherparser.CityAndRegion;
 import ru.bellintegrator.weatherparser.Result;
 import ru.bellintegrator.yahoo_weather.service.YahooRequest;
 import ru.bellintegrator.yahoo_weather.service.YahooRequestInterface;
@@ -28,7 +30,6 @@ import javax.jms.MessageListener;
 @Named
 public class JMSListener implements MessageListener{
 
-
     private YahooRequestInterface yahooRequest;
     private JMSSender jmssender;
 
@@ -42,47 +43,42 @@ public class JMSListener implements MessageListener{
     }
 
     public JMSListener() {
-        //this.yahooRequest = null;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Override
     public void onMessage(Message message) {
+        CityAndRegion location;
         String city;
+        String region;
         Result weather;
+        if(message == null){
+            try {
+                throw new CustomException("Message can not be null");
+            } catch (CustomException e) {
+                e.printStackTrace();
+            }
+        }
         try {
-            city = ((TextMessage) message).getText();
-            LOG.info("yahoo_service received message {}",city);
-            LOG.info("yahoo request sending");
-            weather =yahooRequest.request(city,"ru");
-            LOG.info("yahoo response received {}",weather);
-            jmssender.send(weather);
-            LOG.info("message to db-service sent");
+            if(!message.isBodyAssignableTo(CityAndRegion.class)) {
+                throw new CustomException("Message must be of type CityAndRegion.class");
+            }
+            else {
+                location = message.getBody(CityAndRegion.class);
+                LOG.info("yahoo_service received message {}", location.toString());
+                LOG.info("yahoo request sending ...");
+                city=location.getCity();
+                region=location.getRegion();
+                weather = yahooRequest.request(city, region);
+                LOG.info("yahoo response received {}", weather);
+                jmssender.send(weather);
+                LOG.info("message to db-service sent");
+            }
 
         } catch (JMSException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (CustomException e) {
             e.printStackTrace();
         }
     }

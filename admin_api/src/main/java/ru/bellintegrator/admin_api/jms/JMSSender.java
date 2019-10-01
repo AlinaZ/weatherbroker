@@ -3,6 +3,7 @@ package ru.bellintegrator.admin_api.jms;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.bellintegrator.weatherparser.CityAndRegion;
 
 import javax.annotation.Resource;
 import javax.enterprise.context.ApplicationScoped;
@@ -26,11 +27,11 @@ public class JMSSender {
     /**
      * Отправить сообщение в очередь для модуля yahoo_service
      *
-     * @param city город
+     * @param location город + регион (страна или штатб двухсимвольный код)
      */
-    public void send(String city) {
+    public void send(CityAndRegion location) {
         log.info("@@@@@@@@@@@@@@@@@@@@@");
-        context.createProducer().send(queue, city);
+        context.createProducer().send(queue, location);
         log.info("City message has been sent");
     }
 }

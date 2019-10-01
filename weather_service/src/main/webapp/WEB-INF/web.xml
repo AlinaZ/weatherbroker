@@ -24,6 +24,8 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>/WEB-INF/jboss-as-spring-mvc-context.xml</param-value>
         </init-param>
+
+
         <load-on-startup>1</load-on-startup>
     </servlet>
 
@@ -31,5 +33,9 @@
         <servlet-name>user</servlet-name>
         <url-pattern>/user</url-pattern>
     </servlet-mapping>
+
+
+
+
 
 </web-app>

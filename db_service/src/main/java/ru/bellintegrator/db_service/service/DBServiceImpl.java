@@ -57,10 +57,10 @@ public class DBServiceImpl extends HessianServlet implements DBService {
 
     @Override
     @Transactional
-    public Result getResult(String city) {
+    public Result getResult(String city,String region) {
         Result userView = new Result();
 
-        LocationEntity locationByCity = dao.loadLocationByCity(city);
+        LocationEntity locationByCity = dao.loadLocationByCity(city,region);
         if (locationByCity == null) {
             return null;
         } else {

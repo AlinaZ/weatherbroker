@@ -24,7 +24,7 @@ public interface ResultDao{
 
     LocationEntity loadLocationByWoeid(Integer woeid);
 
-    LocationEntity loadLocationByCity(String city);
+    LocationEntity loadLocationByCity(String city,String region);
 
     CurrentObservationEntity loadCOByLocationAndDate(Integer woeid, String date);
 

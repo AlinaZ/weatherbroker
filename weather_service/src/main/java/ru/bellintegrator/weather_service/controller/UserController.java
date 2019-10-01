@@ -35,10 +35,11 @@ public class UserController {
 
     @GetMapping(value = "/user", produces = "application/json")
     public @ResponseBody
-    Result getWeather(@RequestParam(value="city",defaultValue = "ufa") String city) throws WeatherNotFoundException {
-        Result oweather = dbService.getResult(city);
+    Result getWeather(@RequestParam(value="city",defaultValue = "Ufa Raion") String city,@RequestParam (value="region",defaultValue="ru") String region) throws WeatherNotFoundException {
+        Result oweather = dbService.getResult(city,region);
+
         if (oweather==null){
-            throw new WeatherNotFoundException("Weather not found in DATABASE!");
+            throw new WeatherNotFoundException(" ");
         }
         return oweather;
     }

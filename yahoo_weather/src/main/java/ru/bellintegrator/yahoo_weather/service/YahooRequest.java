@@ -22,13 +22,6 @@ public class YahooRequest implements YahooRequestInterface {
 
     private final Logger LOG = LoggerFactory.getLogger(YahooRequest.class);
 
-    /*YahooRequest (Authorization auth){
-        this.auth=auth;
-    }
-
-    YahooRequest (){
-    }*/
-
     @Override
     public Result request(String city, String region) throws IOException {
         ResponseEntity<Result> result;
@@ -36,7 +29,9 @@ public class YahooRequest implements YahooRequestInterface {
 
         RestTemplate restTemplate = new RestTemplate();
 
-        HttpEntity<String> entity = auth.createHeaders(city, region);
+        //HttpEntity<String> entity = auth.createHeaders(city, region);
+        Authorization authorization=new Authorization();
+        HttpEntity<String> entity=authorization.createHeaders(city,region);
         System.out.println(entity.getBody());
         System.out.println(entity.getHeaders());
 
@@ -48,9 +43,9 @@ public class YahooRequest implements YahooRequestInterface {
         /*result =restTemplate.getForObject("https://weather-ydn-yql.media.yahoo.com/forecastrss?location=" + city + "," + region + "&format=json",Result.class);*/
 
 
-        /*System.out.println(result.getBody().getClass());
+        System.out.println(result.getBody().getClass());
         System.out.println(result.getBody().toString());
-        System.out.println(result.getStatusCode());***********************/
+        System.out.println(result.getStatusCode());
 
 
         LOG.info("yahoo request status code -> {}", result.getStatusCodeValue());
@@ -74,8 +69,8 @@ public class YahooRequest implements YahooRequestInterface {
     }
 
     public static void main(String[] args) throws Exception {
-       /* YahooRequest request = new YahooRequest();
-        request.request("ufa", "ru");*/
+        YahooRequest request = new YahooRequest();
+        request.request("northfield", "vt");
 
 
     }

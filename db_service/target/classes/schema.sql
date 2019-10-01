@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS Location (
     version     INTEGER  NOT NULL    COMMENT 'hibernate ru.bellintegrator.weather_service.controller field',
     city        VARCHAR(50)          COMMENT 'city name (string)',
     region      VARCHAR(100)         COMMENT 'state, territory, or region, if given (string)',
-    country     VARCHAR(50)           COMMENT 'two-character country code. (string)',
+    country     VARCHAR(50)          COMMENT 'two-character country code. (string)',
     lat         DOUBLE               COMMENT 'The latitude of the location',
     lon         DOUBLE               COMMENT 'The longitude of the location',
     timezone_id VARCHAR(50)          COMMENT 'Timezone'
@@ -68,3 +68,4 @@ CREATE TABLE IF NOT EXISTS Forecast (
 COMMENT 'The weather forecast for a specific day';
 
 CREATE INDEX IX_Location_City ON Location (city);
+CREATE INDEX IX_Location_Region ON Location (region);

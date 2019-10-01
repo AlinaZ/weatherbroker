@@ -15,7 +15,7 @@ public interface DBService {
      * @param city название города
      * @return данные о погоде
      */
-    Result getResult(String city);
+    Result getResult(String city, String region);
 
     /**
      * Сохранить данные о погоде в БД

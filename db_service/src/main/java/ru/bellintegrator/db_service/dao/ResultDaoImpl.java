@@ -88,9 +88,11 @@ public class ResultDaoImpl implements ResultDao {
      * {@inheritDoc}
      */
     @Override
-    public LocationEntity loadLocationByCity(String city) {
+    public LocationEntity loadLocationByCity(String city, String region) {
+        LOG.info("LOCATION SEARCHED");
         TypedQuery<LocationEntity> query = entityManager.createQuery(
-                "SELECT loc FROM LocationEntity AS loc WHERE loc.city='" + city + "'", LocationEntity.class);
+                "SELECT loc FROM LocationEntity AS loc WHERE loc.city='" + city + "' AND loc.region=' "+region+"'", LocationEntity.class);
+        LOG.info("SELECT loc FROM LocationEntity AS loc WHERE loc.city='" + city + "' AND loc.region='"+region+"'");
         try {
             return query.getSingleResult();
         } catch (NoResultException e) {

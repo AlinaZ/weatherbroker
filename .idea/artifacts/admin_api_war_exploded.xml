@@ -14,6 +14,15 @@
           <element id="module-output" name="admin_api" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="exception-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="exception" />
+          </element>
+          <element id="archive" name="weatherparser-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="weatherparser" />
+          </element>
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.17" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
